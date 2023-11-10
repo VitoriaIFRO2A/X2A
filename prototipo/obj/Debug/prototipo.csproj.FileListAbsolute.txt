@@ -1,0 +1,12 @@
+C:\Users\2022102020086\source\repos\prototipo\prototipo\bin\Debug\prototipo.exe.config
+C:\Users\2022102020086\source\repos\prototipo\prototipo\bin\Debug\prototipo.exe
+C:\Users\2022102020086\source\repos\prototipo\prototipo\bin\Debug\prototipo.pdb
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.csproj.AssemblyReference.cache
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.csproj.SuggestedBindingRedirects.cache
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.Form1.resources
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.Properties.Resources.resources
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.csproj.GenerateResource.cache
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.csproj.CoreCompileInputs.cache
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.exe
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.pdb
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.Form2.resources
