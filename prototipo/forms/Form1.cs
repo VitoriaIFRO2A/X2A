@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CadastroFuncionario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,9 +19,45 @@ namespace prototipo
             this.Visible = false;
             this.Visible = true;
             
+
             
             InitializeComponent();
         }
+
+        void Inserir()
+        {
+            var nomeFunc = "joão da silva neto";
+            var cpfFunc = "123.123.123-12";
+
+            try
+            {
+                Conexao conexao = new Conexao();
+                var comando = conexao.Comando("INSERT INTO funcionario (nome_func, cpf_func) VALUES (Gnome, @cpf)");
+
+                comando.Parameters.AddWithValue("@nome", nomeFunc);
+                comando.Parameters.AddWithValue("@cpf", cpfFunc);
+
+                var resultado = comando.ExecuteNonQuery();
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Funcionário cadastrado com sucesso");
+                }
+
+
+            }
+
+             catch (Exception ex) 
+            { 
+                MessageBox.Show(ex.Message);
+            }
+        }
+    
+                  
+            
+
+        
+
+
 
         private void label18_Click(object sender, EventArgs e)
         {
@@ -78,6 +115,8 @@ namespace prototipo
             MessageBox.Show(tb_pais.Text);
             MessageBox.Show(tb_funcao.Text);
             MessageBox.Show(tb_salario.Text);
+
+            //Inserir();
 
         }
     }
