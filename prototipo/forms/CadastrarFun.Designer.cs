@@ -222,6 +222,7 @@
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(157, 20);
             this.tb_nome.TabIndex = 1;
+            this.tb_nome.TextChanged += new System.EventHandler(this.tb_nome_TextChanged);
             // 
             // label2
             // 

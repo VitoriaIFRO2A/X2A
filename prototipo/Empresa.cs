@@ -30,5 +30,18 @@ namespace prototipo
             this.Visible = true;
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tb_cnpj.Clear();
+            tb_razaosocial.Clear();
+            tb_nomefantasia.Clear();
+            mb_telefone.Clear();
+            tb_capitalsocial.Clear();
+            tb_endereco.Clear();
+            tb_nomeproprietario.Clear();
+            tb_cpf.Clear();
+
+        }
     }
 }

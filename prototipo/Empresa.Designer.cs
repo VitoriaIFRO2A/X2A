@@ -323,7 +323,7 @@
             this.rb_matriz.AutoSize = true;
             this.rb_matriz.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_matriz.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_matriz.Location = new System.Drawing.Point(371, 107);
+            this.rb_matriz.Location = new System.Drawing.Point(525, 105);
             this.rb_matriz.Name = "rb_matriz";
             this.rb_matriz.Size = new System.Drawing.Size(82, 27);
             this.rb_matriz.TabIndex = 20;
@@ -336,7 +336,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label11.Location = new System.Drawing.Point(298, 109);
+            this.label11.Location = new System.Drawing.Point(439, 105);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 23);
             this.label11.TabIndex = 21;
@@ -347,7 +347,7 @@
             this.rb_filial.AutoSize = true;
             this.rb_filial.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_filial.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_filial.Location = new System.Drawing.Point(480, 107);
+            this.rb_filial.Location = new System.Drawing.Point(640, 105);
             this.rb_filial.Name = "rb_filial";
             this.rb_filial.Size = new System.Drawing.Size(67, 27);
             this.rb_filial.TabIndex = 22;
@@ -410,7 +410,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label13.Location = new System.Drawing.Point(367, 212);
+            this.label13.Location = new System.Drawing.Point(382, 212);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(161, 23);
             this.label13.TabIndex = 27;
@@ -425,7 +425,7 @@
             "Sociedade Anônima",
             "Sociedade Simples Limitada",
             " Sociedade Limitada Unipessoal"});
-            this.cb_naturezajuridica.Location = new System.Drawing.Point(554, 212);
+            this.cb_naturezajuridica.Location = new System.Drawing.Point(588, 212);
             this.cb_naturezajuridica.Name = "cb_naturezajuridica";
             this.cb_naturezajuridica.Size = new System.Drawing.Size(174, 21);
             this.cb_naturezajuridica.TabIndex = 28;
@@ -435,7 +435,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label14.Location = new System.Drawing.Point(367, 270);
+            this.label14.Location = new System.Drawing.Point(382, 267);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(171, 23);
             this.label14.TabIndex = 29;
@@ -446,7 +446,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label15.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label15.Location = new System.Drawing.Point(367, 323);
+            this.label15.Location = new System.Drawing.Point(382, 323);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(151, 23);
             this.label15.TabIndex = 30;
@@ -454,14 +454,14 @@
             // 
             // tb_nomeproprietario
             // 
-            this.tb_nomeproprietario.Location = new System.Drawing.Point(554, 270);
+            this.tb_nomeproprietario.Location = new System.Drawing.Point(588, 270);
             this.tb_nomeproprietario.Name = "tb_nomeproprietario";
             this.tb_nomeproprietario.Size = new System.Drawing.Size(174, 20);
             this.tb_nomeproprietario.TabIndex = 32;
             // 
             // tb_cpf
             // 
-            this.tb_cpf.Location = new System.Drawing.Point(566, 323);
+            this.tb_cpf.Location = new System.Drawing.Point(662, 326);
             this.tb_cpf.Mask = "000,000,000,-00";
             this.tb_cpf.Name = "tb_cpf";
             this.tb_cpf.Size = new System.Drawing.Size(100, 20);
@@ -472,7 +472,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(449, 24);
+            this.label16.Location = new System.Drawing.Point(379, 24);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(296, 37);
             this.label16.TabIndex = 34;
@@ -516,6 +516,7 @@
             this.button3.TabIndex = 38;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Empresa
             // 

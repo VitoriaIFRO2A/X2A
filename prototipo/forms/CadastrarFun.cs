@@ -1,6 +1,7 @@
 ﻿using CadastroFuncionario;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -31,18 +32,24 @@ namespace prototipo
             try
             {
                 Conexao conexao = new Conexao();
-                var comando = conexao.Comando("INSERT INTO funcionario VALUES (@id, @nome, @data_nascimento, @cpf, @rg, @telefone, @email, @endereco, @estado_civil, @funcao, @salario)");
-
+                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (@id, @nome, @data_nascimento, @cpf, @rg, @telefone, @email, @estado_civil, @funcao, @salario, @estado, @cidade, @rua, @numero, @bairro, @pais)");
+                //nome, data_nas, cpf, rg, telefone, email, estado_civil, funcao, salario, estado, cidade, rua, numero, bairro, pais.
+                comando.Parameters.AddWithValue("@id", null);
                 comando.Parameters.AddWithValue("@nome", funcionario.Nome);
                 comando.Parameters.AddWithValue("@data_nascimento", funcionario.Data_nas);
                 comando.Parameters.AddWithValue("@cpf", funcionario.Cpf);
                 comando.Parameters.AddWithValue("@rg", funcionario.Rg);
                 comando.Parameters.AddWithValue("@telefone", funcionario.Telefone);
                 comando.Parameters.AddWithValue("@email", funcionario.Email);
-                comando.Parameters.AddWithValue("@endereco", funcionario.Endereco);
                 comando.Parameters.AddWithValue("@estado_civil", funcionario.Estado_civil);
                 comando.Parameters.AddWithValue("@funcao", funcionario.Funcao);
                 comando.Parameters.AddWithValue("@salario", funcionario.Salario);
+                comando.Parameters.AddWithValue("@estado", funcionario.Estado);
+                comando.Parameters.AddWithValue("@cidade", funcionario.Cidade);
+                comando.Parameters.AddWithValue("@rua", funcionario.Rua);
+                comando.Parameters.AddWithValue("@numero", funcionario.Numero);
+                comando.Parameters.AddWithValue("@bairro", funcionario.Bairro);
+                comando.Parameters.AddWithValue("@pais", funcionario.Pais);
 
                 var resultado = comando.ExecuteNonQuery();
                 if (resultado > 0)
@@ -119,29 +126,43 @@ namespace prototipo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            }
+        }
         private void button1_Click_1(object sender, EventArgs e)
         {
+            try
+            {
 
-            string cpf = mt_cpf.Text;
-            bool resulcpf = Validacao.CPF(cpf);
-            MessageBox.Show(tb_email.Text);
-            MessageBox.Show(tb_nome.Text);
-            MessageBox.Show(mt_dataNasc.Text);
-            MessageBox.Show(mt_cpf.Text);
-            MessageBox.Show(mt_rg.Text);
-            MessageBox.Show(mt_telefone.Text);
-            MessageBox.Show(tb_rua.Text);
-            MessageBox.Show(tb_bairro.Text);                                                                                                                                                                                                                                                        
-            MessageBox.Show(tb_numero.Text);
-            MessageBox.Show(tb_cidade.Text);
-            MessageBox.Show(tb_estado.Text);
-            MessageBox.Show(tb_pais.Text);
-            MessageBox.Show(tb_funcao.Text);
-            MessageBox.Show(tb_salario.Text);
 
-            Inserir();
+                string nome = tb_nome.Text;
+                string cpf = mt_cpf.Text;
+                if (Validacao.CPF(cpf) == false)
+                {
+                    lb_Resultado.Text = "CPF não passou na verificação";
+                }
+                string telefone = mt_telefone.Text;
+                DateTime Data_nascimento = Convert.ToDateTime(mt_dataNasc.Text);
+                string rg = mt_rg.Text;
+                string email = tb_email.Text;
 
+                string rua = tb_rua.Text;
+                int numero = Convert.ToInt32(tb_numero.Text);
+                string estado = tb_estado.Text;
+                string bairro = tb_bairro.Text;
+                string cidade = tb_cidade.Text;
+                string pais = tb_pais.Text;
+                string funcao = tb_funcao.Text;
+                double salario = Convert.ToDouble(tb_salario.Text);
+                string estado_civil = cb_estadoCivil.Text;
+
+                Funcionario funcionario = new Funcionario(nome, Data_nascimento, cpf, rg, telefone, email, estado_civil, funcao, salario, estado, cidade, rua, numero, bairro, pais);
+
+                Inserir(funcionario);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                    
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -150,6 +171,11 @@ namespace prototipo
             this.Visible = false;
             telaInicial.ShowDialog();
             this.Visible = true;
+        }
+
+        private void tb_nome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     
