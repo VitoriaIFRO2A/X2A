@@ -177,6 +177,14 @@ namespace prototipo
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ListaFuncionario d = new ListaFuncionario();
+            this.Visible = false;
+            d.ShowDialog();
+            this.Visible = true;
+        }
     }
     
 }

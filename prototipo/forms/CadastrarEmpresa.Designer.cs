@@ -1,6 +1,6 @@
 ﻿namespace prototipo
 {
-    partial class Empresa
+    partial class CadastrarEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -507,6 +507,7 @@
             this.button2.TabIndex = 37;
             this.button2.Text = "Cadastrar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -518,7 +519,7 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Empresa
+            // CadastrarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -562,7 +563,7 @@
             this.Controls.Add(this.cb_situacaocadastral);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Empresa";
+            this.Name = "CadastrarEmpresa";
             this.ResumeLayout(false);
             this.PerformLayout();
 

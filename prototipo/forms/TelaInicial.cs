@@ -27,7 +27,7 @@ namespace prototipo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Empresa b = new Empresa();
+            CadastrarEmpresa b = new CadastrarEmpresa();
             this.Visible = false;
             b.ShowDialog();
             this.Visible = true;

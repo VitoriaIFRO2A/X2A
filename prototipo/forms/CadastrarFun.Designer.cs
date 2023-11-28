@@ -69,6 +69,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -454,7 +455,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(350, 549);
+            this.button1.Location = new System.Drawing.Point(264, 550);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 29);
             this.button1.TabIndex = 5;
@@ -465,9 +466,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Snow;
-            this.button2.Location = new System.Drawing.Point(563, 548);
+            this.button2.Location = new System.Drawing.Point(425, 549);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 23);
+            this.button2.Size = new System.Drawing.Size(138, 29);
             this.button2.TabIndex = 6;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -483,12 +484,23 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(623, 549);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(152, 29);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "LISTA FUNCIONARIO";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // CadastrarFun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(862, 590);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -552,6 +564,7 @@
         private System.Windows.Forms.MaskedTextBox mt_cpf;
         private System.Windows.Forms.Label lb_Resultado;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

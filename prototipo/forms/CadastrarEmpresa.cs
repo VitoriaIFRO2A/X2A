@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prototipo
 {
-    public partial class Empresa : Form
+    public partial class CadastrarEmpresa : Form
     {
-        public Empresa()
+        public CadastrarEmpresa()
         {
             InitializeComponent();
         }
@@ -41,6 +41,11 @@ namespace prototipo
             tb_endereco.Clear();
             tb_nomeproprietario.Clear();
             tb_cpf.Clear();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

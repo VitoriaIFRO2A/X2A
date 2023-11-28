@@ -98,12 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexao.cs" />
-    <Compile Include="Empresa.cs">
+    <Compile Include="programas\Conexao.cs" />
+    <Compile Include="forms\CadastrarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empresa.Designer.cs">
-      <DependentUpon>Empresa.cs</DependentUpon>
+    <Compile Include="forms\CadastrarEmpresa.Designer.cs">
+      <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\CadastrarFun.cs">
       <SubType>Form</SubType>
@@ -117,18 +117,24 @@
     <Compile Include="forms\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaEmpresa.cs">
+    <Compile Include="forms\ListaEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaEmpresa.Designer.cs">
+    <Compile Include="forms\ListaEmpresa.Designer.cs">
       <DependentUpon>ListaEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ListaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ListaFuncionario.Designer.cs">
+      <DependentUpon>ListaFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="programas\Funcionario.cs" />
     <Compile Include="programas\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="programas\Validacao.cs" />
-    <EmbeddedResource Include="Empresa.resx">
-      <DependentUpon>Empresa.cs</DependentUpon>
+    <EmbeddedResource Include="forms\CadastrarEmpresa.resx">
+      <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\CadastrarFun.resx">
       <DependentUpon>CadastrarFun.cs</DependentUpon>
@@ -136,8 +142,11 @@
     <EmbeddedResource Include="forms\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaEmpresa.resx">
+    <EmbeddedResource Include="forms\ListaEmpresa.resx">
       <DependentUpon>ListaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ListaFuncionario.resx">
+      <DependentUpon>ListaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

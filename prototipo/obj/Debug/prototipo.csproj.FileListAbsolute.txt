@@ -42,7 +42,8 @@ C:\Users\2022102020086\source\repos\prototipo\prototipo\bin\Debug\System.Runtime
 C:\Users\2022102020086\source\repos\prototipo\prototipo\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.exe.config
 C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.csproj.CopyComplete
-C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.Empresa.resources
 C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.CadastrarFun.resources
 C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.TelaInicial.resources
 C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.ListaEmpresa.resources
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.CadastrarEmpresa.resources
+C:\Users\2022102020086\source\repos\prototipo\prototipo\obj\Debug\prototipo.ListaFuncionario.resources
