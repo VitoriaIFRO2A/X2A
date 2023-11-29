@@ -129,6 +129,8 @@
     <Compile Include="forms\ListaFuncionario.Designer.cs">
       <DependentUpon>ListaFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="programas\DAOHelper.cs" />
+    <Compile Include="programas\Empresa.cs" />
     <Compile Include="programas\Funcionario.cs" />
     <Compile Include="programas\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

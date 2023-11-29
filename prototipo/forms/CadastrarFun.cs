@@ -32,8 +32,7 @@ namespace prototipo
             try
             {
                 Conexao conexao = new Conexao();
-                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (@id, @nome, @data_nascimento, @cpf, @rg, @telefone, @email, @estado_civil, @funcao, @salario, @estado, @cidade, @rua, @numero, @bairro, @pais)");
-                //nome, data_nas, cpf, rg, telefone, email, estado_civil, funcao, salario, estado, cidade, rua, numero, bairro, pais.
+                var comando = conexao.Comando("INSERT INTO Funcionario VALUES (@id, @nome, @data_nascimento, @cpf, @rg, @telefone, @email, @rua, @bairro, @numero, @pais, @estado_civil, @funcao, @salario, @estado, @cidade)");
                 comando.Parameters.AddWithValue("@id", null);
                 comando.Parameters.AddWithValue("@nome", funcionario.Nome);
                 comando.Parameters.AddWithValue("@data_nascimento", funcionario.Data_nas);
@@ -65,27 +64,7 @@ namespace prototipo
         }
 
 
-        void Consultar()
-        {
-            try
-            {
-                var conexao = new Conexao();
-                var comando = conexao.Comando("SELECT * FROM funcionario");
-                var leitor = comando.ExecuteReader();
-                string resultado = null;
-
-                while (leitor.Read())
-                {
-                    resultado += "\n" + leitor.GetString("nome_func");
-                }
-
-                MessageBox.Show(resultado);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        
 
         
 
@@ -168,9 +147,8 @@ namespace prototipo
         private void button3_Click(object sender, EventArgs e)
         {
             TelaInicial telaInicial = new TelaInicial();
+            telaInicial.Visible = true;
             this.Visible = false;
-            telaInicial.ShowDialog();
-            this.Visible = true;
         }
 
         private void tb_nome_TextChanged(object sender, EventArgs e)
@@ -182,8 +160,7 @@ namespace prototipo
         {
             ListaFuncionario d = new ListaFuncionario();
             this.Visible = false;
-            d.ShowDialog();
-            this.Visible = true;
+            d.Visible = true;
         }
     }
     

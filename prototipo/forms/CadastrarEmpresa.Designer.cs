@@ -36,7 +36,6 @@
             this.tb_razaosocial = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cb_regime = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,7 +44,7 @@
             this.tb_capitalsocial = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tb_endereco = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cb_estado = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tb_nomefantasia = new System.Windows.Forms.TextBox();
             this.rb_matriz = new System.Windows.Forms.RadioButton();
@@ -66,6 +65,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -153,24 +162,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Nome Fantasia:";
             // 
-            // cb_regime
-            // 
-            this.cb_regime.FormattingEnabled = true;
-            this.cb_regime.Items.AddRange(new object[] {
-            "Simples Nacional",
-            "Lucro Presumido",
-            "Real"});
-            this.cb_regime.Location = new System.Drawing.Point(183, 192);
-            this.cb_regime.Name = "cb_regime";
-            this.cb_regime.Size = new System.Drawing.Size(85, 21);
-            this.cb_regime.TabIndex = 8;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(14, 247);
+            this.label6.Location = new System.Drawing.Point(500, 345);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(240, 23);
             this.label6.TabIndex = 9;
@@ -178,9 +175,9 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(260, 247);
+            this.dateTimePicker1.Location = new System.Drawing.Point(746, 345);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(81, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(220, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // label7
@@ -235,13 +232,13 @@
             // 
             this.tb_endereco.Location = new System.Drawing.Point(201, 384);
             this.tb_endereco.Name = "tb_endereco";
-            this.tb_endereco.Size = new System.Drawing.Size(116, 20);
+            this.tb_endereco.Size = new System.Drawing.Size(180, 20);
             this.tb_endereco.TabIndex = 16;
             // 
-            // comboBox3
+            // cb_estado
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cb_estado.FormattingEnabled = true;
+            this.cb_estado.Items.AddRange(new object[] {
             "Acre (AC)",
             "",
             "Alagoas  (AL)",
@@ -295,10 +292,10 @@
             "Tocantins (TO)",
             "",
             "Distrito Federal (DF)"});
-            this.comboBox3.Location = new System.Drawing.Point(91, 420);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 17;
+            this.cb_estado.Location = new System.Drawing.Point(91, 420);
+            this.cb_estado.Name = "cb_estado";
+            this.cb_estado.Size = new System.Drawing.Size(121, 21);
+            this.cb_estado.TabIndex = 17;
             // 
             // label10
             // 
@@ -323,20 +320,21 @@
             this.rb_matriz.AutoSize = true;
             this.rb_matriz.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_matriz.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_matriz.Location = new System.Drawing.Point(525, 105);
+            this.rb_matriz.Location = new System.Drawing.Point(12, 19);
             this.rb_matriz.Name = "rb_matriz";
             this.rb_matriz.Size = new System.Drawing.Size(82, 27);
             this.rb_matriz.TabIndex = 20;
             this.rb_matriz.TabStop = true;
             this.rb_matriz.Text = "Matriz";
             this.rb_matriz.UseVisualStyleBackColor = false;
+            this.rb_matriz.CheckedChanged += new System.EventHandler(this.rb_matriz_CheckedChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label11.Location = new System.Drawing.Point(439, 105);
+            this.label11.Location = new System.Drawing.Point(585, 103);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 23);
             this.label11.TabIndex = 21;
@@ -347,7 +345,7 @@
             this.rb_filial.AutoSize = true;
             this.rb_filial.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_filial.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_filial.Location = new System.Drawing.Point(640, 105);
+            this.rb_filial.Location = new System.Drawing.Point(109, 19);
             this.rb_filial.Name = "rb_filial";
             this.rb_filial.Size = new System.Drawing.Size(67, 27);
             this.rb_filial.TabIndex = 22;
@@ -360,18 +358,19 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label12.Location = new System.Drawing.Point(298, 164);
+            this.label12.Location = new System.Drawing.Point(483, 159);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(162, 23);
             this.label12.TabIndex = 23;
             this.label12.Text = "Porte de Empresa:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // rb_me
             // 
             this.rb_me.AutoSize = true;
             this.rb_me.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_me.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_me.Location = new System.Drawing.Point(584, 160);
+            this.rb_me.Location = new System.Drawing.Point(115, 19);
             this.rb_me.Name = "rb_me";
             this.rb_me.Size = new System.Drawing.Size(82, 27);
             this.rb_me.TabIndex = 24;
@@ -384,7 +383,7 @@
             this.rb_gra.AutoSize = true;
             this.rb_gra.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_gra.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_gra.Location = new System.Drawing.Point(672, 160);
+            this.rb_gra.Location = new System.Drawing.Point(203, 19);
             this.rb_gra.Name = "rb_gra";
             this.rb_gra.Size = new System.Drawing.Size(90, 27);
             this.rb_gra.TabIndex = 25;
@@ -397,7 +396,7 @@
             this.rb_pe.AutoSize = true;
             this.rb_pe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rb_pe.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.rb_pe.Location = new System.Drawing.Point(466, 160);
+            this.rb_pe.Location = new System.Drawing.Point(6, 19);
             this.rb_pe.Name = "rb_pe";
             this.rb_pe.Size = new System.Drawing.Size(103, 27);
             this.rb_pe.TabIndex = 26;
@@ -410,7 +409,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label13.Location = new System.Drawing.Point(382, 212);
+            this.label13.Location = new System.Drawing.Point(623, 230);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(161, 23);
             this.label13.TabIndex = 27;
@@ -425,7 +424,7 @@
             "Sociedade Anônima",
             "Sociedade Simples Limitada",
             " Sociedade Limitada Unipessoal"});
-            this.cb_naturezajuridica.Location = new System.Drawing.Point(588, 212);
+            this.cb_naturezajuridica.Location = new System.Drawing.Point(790, 230);
             this.cb_naturezajuridica.Name = "cb_naturezajuridica";
             this.cb_naturezajuridica.Size = new System.Drawing.Size(174, 21);
             this.cb_naturezajuridica.TabIndex = 28;
@@ -435,7 +434,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label14.Location = new System.Drawing.Point(382, 267);
+            this.label14.Location = new System.Drawing.Point(613, 267);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(171, 23);
             this.label14.TabIndex = 29;
@@ -446,7 +445,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label15.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label15.Location = new System.Drawing.Point(382, 323);
+            this.label15.Location = new System.Drawing.Point(633, 306);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(151, 23);
             this.label15.TabIndex = 30;
@@ -454,14 +453,14 @@
             // 
             // tb_nomeproprietario
             // 
-            this.tb_nomeproprietario.Location = new System.Drawing.Point(588, 270);
+            this.tb_nomeproprietario.Location = new System.Drawing.Point(790, 270);
             this.tb_nomeproprietario.Name = "tb_nomeproprietario";
             this.tb_nomeproprietario.Size = new System.Drawing.Size(174, 20);
             this.tb_nomeproprietario.TabIndex = 32;
             // 
             // tb_cpf
             // 
-            this.tb_cpf.Location = new System.Drawing.Point(662, 326);
+            this.tb_cpf.Location = new System.Drawing.Point(790, 309);
             this.tb_cpf.Mask = "000,000,000,-00";
             this.tb_cpf.Name = "tb_cpf";
             this.tb_cpf.Size = new System.Drawing.Size(100, 20);
@@ -472,7 +471,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(379, 24);
+            this.label16.Location = new System.Drawing.Point(352, 12);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(296, 37);
             this.label16.TabIndex = 34;
@@ -483,7 +482,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(394, 415);
+            this.label17.Location = new System.Drawing.Point(673, 19);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(175, 24);
             this.label17.TabIndex = 35;
@@ -491,9 +490,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(616, 415);
+            this.button1.Location = new System.Drawing.Point(854, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 23);
+            this.button1.Size = new System.Drawing.Size(50, 24);
             this.button1.TabIndex = 36;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
@@ -501,9 +500,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(443, 364);
+            this.button2.Location = new System.Drawing.Point(613, 398);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(171, 40);
             this.button2.TabIndex = 37;
             this.button2.Text = "Cadastrar";
             this.button2.UseVisualStyleBackColor = true;
@@ -511,20 +510,102 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(584, 364);
+            this.button3.Location = new System.Drawing.Point(790, 398);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(171, 40);
             this.button3.TabIndex = 38;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rb_matriz);
+            this.groupBox1.Controls.Add(this.rb_filial);
+            this.groupBox1.Location = new System.Drawing.Point(651, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 50);
+            this.groupBox1.TabIndex = 39;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rb_pe);
+            this.groupBox2.Controls.Add(this.rb_gra);
+            this.groupBox2.Controls.Add(this.rb_me);
+            this.groupBox2.Location = new System.Drawing.Point(651, 136);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(313, 77);
+            this.groupBox2.TabIndex = 40;
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.radioButton4);
+            this.groupBox3.Location = new System.Drawing.Point(193, 175);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(188, 114);
+            this.groupBox3.TabIndex = 41;
+            this.groupBox3.TabStop = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
+            this.radioButton4.Location = new System.Drawing.Point(6, 13);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(170, 27);
+            this.radioButton4.TabIndex = 42;
+            this.radioButton4.Text = "Simples nacional";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
+            this.radioButton1.Location = new System.Drawing.Point(6, 48);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(170, 27);
+            this.radioButton1.TabIndex = 43;
+            this.radioButton1.Text = "Lucro presumido";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
+            this.radioButton2.Location = new System.Drawing.Point(6, 81);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(64, 27);
+            this.radioButton2.TabIndex = 44;
+            this.radioButton2.Text = "Real";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(440, 398);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(167, 40);
+            this.button4.TabIndex = 42;
+            this.button4.Text = "Voltar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // CadastrarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightPink;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(976, 450);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -536,16 +617,11 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.cb_naturezajuridica);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.rb_pe);
-            this.Controls.Add(this.rb_gra);
-            this.Controls.Add(this.rb_me);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.rb_filial);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.rb_matriz);
             this.Controls.Add(this.tb_nomefantasia);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cb_estado);
             this.Controls.Add(this.tb_endereco);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tb_capitalsocial);
@@ -554,7 +630,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.cb_regime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_razaosocial);
@@ -564,6 +639,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CadastrarEmpresa";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -579,7 +660,6 @@
         private System.Windows.Forms.TextBox tb_razaosocial;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cb_regime;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
@@ -588,7 +668,7 @@
         private System.Windows.Forms.TextBox tb_capitalsocial;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_endereco;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cb_estado;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tb_nomefantasia;
         private System.Windows.Forms.RadioButton rb_matriz;
@@ -609,5 +689,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Button button4;
     }
 }

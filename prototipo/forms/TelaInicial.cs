@@ -19,10 +19,10 @@ namespace prototipo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CadastrarFun a = new CadastrarFun();
-            this.Visible = false;
-            this.Visible = true;
-            this.Hide();
+             CadastrarFun abrirForms = new CadastrarFun();
+             this.Visible = false;
+             abrirForms.Visible = false;
+             abrirForms.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -30,7 +30,6 @@ namespace prototipo
             CadastrarEmpresa b = new CadastrarEmpresa();
             this.Visible = false;
             b.ShowDialog();
-            this.Visible = true;
             
         }
 
