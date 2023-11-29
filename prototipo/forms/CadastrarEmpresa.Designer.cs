@@ -68,9 +68,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -83,7 +83,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Location = new System.Drawing.Point(12, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 23);
             this.label1.TabIndex = 0;
@@ -95,7 +95,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Location = new System.Drawing.Point(12, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 23);
             this.label2.TabIndex = 1;
@@ -110,9 +110,9 @@
             "Suspensa",
             "Inapta ",
             "Baixada"});
-            this.cb_situacaocadastral.Location = new System.Drawing.Point(193, 148);
+            this.cb_situacaocadastral.Location = new System.Drawing.Point(193, 155);
             this.cb_situacaocadastral.Name = "cb_situacaocadastral";
-            this.cb_situacaocadastral.Size = new System.Drawing.Size(84, 21);
+            this.cb_situacaocadastral.Size = new System.Drawing.Size(128, 21);
             this.cb_situacaocadastral.TabIndex = 2;
             // 
             // label3
@@ -120,7 +120,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 148);
+            this.label3.Location = new System.Drawing.Point(12, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(175, 23);
             this.label3.TabIndex = 3;
@@ -128,16 +128,16 @@
             // 
             // tb_cnpj
             // 
-            this.tb_cnpj.Location = new System.Drawing.Point(76, 24);
+            this.tb_cnpj.Location = new System.Drawing.Point(76, 73);
             this.tb_cnpj.Name = "tb_cnpj";
-            this.tb_cnpj.Size = new System.Drawing.Size(192, 20);
+            this.tb_cnpj.Size = new System.Drawing.Size(245, 20);
             this.tb_cnpj.TabIndex = 4;
             // 
             // tb_razaosocial
             // 
-            this.tb_razaosocial.Location = new System.Drawing.Point(138, 71);
+            this.tb_razaosocial.Location = new System.Drawing.Point(138, 99);
             this.tb_razaosocial.Name = "tb_razaosocial";
-            this.tb_razaosocial.Size = new System.Drawing.Size(139, 20);
+            this.tb_razaosocial.Size = new System.Drawing.Size(183, 20);
             this.tb_razaosocial.TabIndex = 5;
             // 
             // label4
@@ -145,18 +145,19 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 192);
+            this.label4.Location = new System.Drawing.Point(12, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 23);
             this.label4.TabIndex = 6;
             this.label4.Text = "Regime Tributário:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 109);
+            this.label5.Location = new System.Drawing.Point(15, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 23);
             this.label5.TabIndex = 7;
@@ -167,7 +168,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(500, 345);
+            this.label6.Location = new System.Drawing.Point(483, 345);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(240, 23);
             this.label6.TabIndex = 9;
@@ -175,9 +176,9 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(746, 345);
+            this.dateTimePicker1.Location = new System.Drawing.Point(729, 348);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(220, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(235, 20);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // label7
@@ -185,7 +186,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 295);
+            this.label7.Location = new System.Drawing.Point(15, 306);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 23);
             this.label7.TabIndex = 11;
@@ -193,7 +194,7 @@
             // 
             // mb_telefone
             // 
-            this.mb_telefone.Location = new System.Drawing.Point(107, 295);
+            this.mb_telefone.Location = new System.Drawing.Point(112, 309);
             this.mb_telefone.Mask = "(00) 00000-0000";
             this.mb_telefone.Name = "mb_telefone";
             this.mb_telefone.Size = new System.Drawing.Size(100, 20);
@@ -214,7 +215,7 @@
             // 
             this.tb_capitalsocial.Location = new System.Drawing.Point(149, 345);
             this.tb_capitalsocial.Name = "tb_capitalsocial";
-            this.tb_capitalsocial.Size = new System.Drawing.Size(119, 20);
+            this.tb_capitalsocial.Size = new System.Drawing.Size(172, 20);
             this.tb_capitalsocial.TabIndex = 14;
             // 
             // label9
@@ -310,9 +311,9 @@
             // 
             // tb_nomefantasia
             // 
-            this.tb_nomefantasia.Location = new System.Drawing.Point(157, 112);
+            this.tb_nomefantasia.Location = new System.Drawing.Point(157, 129);
             this.tb_nomefantasia.Name = "tb_nomefantasia";
-            this.tb_nomefantasia.Size = new System.Drawing.Size(118, 20);
+            this.tb_nomefantasia.Size = new System.Drawing.Size(164, 20);
             this.tb_nomefantasia.TabIndex = 19;
             // 
             // rb_matriz
@@ -334,7 +335,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label11.Location = new System.Drawing.Point(585, 103);
+            this.label11.Location = new System.Drawing.Point(483, 99);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 23);
             this.label11.TabIndex = 21;
@@ -409,7 +410,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label13.Location = new System.Drawing.Point(623, 230);
+            this.label13.Location = new System.Drawing.Point(483, 227);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(161, 23);
             this.label13.TabIndex = 27;
@@ -424,7 +425,7 @@
             "Sociedade Anônima",
             "Sociedade Simples Limitada",
             " Sociedade Limitada Unipessoal"});
-            this.cb_naturezajuridica.Location = new System.Drawing.Point(790, 230);
+            this.cb_naturezajuridica.Location = new System.Drawing.Point(657, 227);
             this.cb_naturezajuridica.Name = "cb_naturezajuridica";
             this.cb_naturezajuridica.Size = new System.Drawing.Size(174, 21);
             this.cb_naturezajuridica.TabIndex = 28;
@@ -434,7 +435,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label14.Location = new System.Drawing.Point(613, 267);
+            this.label14.Location = new System.Drawing.Point(483, 267);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(171, 23);
             this.label14.TabIndex = 29;
@@ -445,7 +446,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label15.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.label15.Location = new System.Drawing.Point(633, 306);
+            this.label15.Location = new System.Drawing.Point(483, 309);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(151, 23);
             this.label15.TabIndex = 30;
@@ -453,14 +454,14 @@
             // 
             // tb_nomeproprietario
             // 
-            this.tb_nomeproprietario.Location = new System.Drawing.Point(790, 270);
+            this.tb_nomeproprietario.Location = new System.Drawing.Point(660, 267);
             this.tb_nomeproprietario.Name = "tb_nomeproprietario";
             this.tb_nomeproprietario.Size = new System.Drawing.Size(174, 20);
             this.tb_nomeproprietario.TabIndex = 32;
             // 
             // tb_cpf
             // 
-            this.tb_cpf.Location = new System.Drawing.Point(790, 309);
+            this.tb_cpf.Location = new System.Drawing.Point(660, 309);
             this.tb_cpf.Mask = "000,000,000,-00";
             this.tb_cpf.Name = "tb_cpf";
             this.tb_cpf.Size = new System.Drawing.Size(100, 20);
@@ -471,7 +472,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(352, 12);
+            this.label16.Location = new System.Drawing.Point(182, 19);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(296, 37);
             this.label16.TabIndex = 34;
@@ -480,9 +481,9 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(673, 19);
+            this.label17.Location = new System.Drawing.Point(609, 29);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(175, 24);
             this.label17.TabIndex = 35;
@@ -490,39 +491,42 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(854, 19);
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(798, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 24);
             this.button1.TabIndex = 36;
             this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(613, 398);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(171, 40);
             this.button2.TabIndex = 37;
             this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(790, 398);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(171, 40);
             this.button3.TabIndex = 38;
             this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rb_matriz);
             this.groupBox1.Controls.Add(this.rb_filial);
-            this.groupBox1.Location = new System.Drawing.Point(651, 80);
+            this.groupBox1.Location = new System.Drawing.Point(560, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 50);
             this.groupBox1.TabIndex = 39;
@@ -544,35 +548,11 @@
             this.groupBox3.Controls.Add(this.radioButton2);
             this.groupBox3.Controls.Add(this.radioButton1);
             this.groupBox3.Controls.Add(this.radioButton4);
-            this.groupBox3.Location = new System.Drawing.Point(193, 175);
+            this.groupBox3.Location = new System.Drawing.Point(183, 192);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(188, 114);
+            this.groupBox3.Size = new System.Drawing.Size(188, 111);
             this.groupBox3.TabIndex = 41;
             this.groupBox3.TabStop = false;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.radioButton4.Location = new System.Drawing.Point(6, 13);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(170, 27);
-            this.radioButton4.TabIndex = 42;
-            this.radioButton4.Text = "Simples nacional";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
-            this.radioButton1.Location = new System.Drawing.Point(6, 48);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(170, 27);
-            this.radioButton1.TabIndex = 43;
-            this.radioButton1.Text = "Lucro presumido";
-            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
@@ -586,14 +566,39 @@
             this.radioButton2.Text = "Real";
             this.radioButton2.UseVisualStyleBackColor = false;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
+            this.radioButton1.Location = new System.Drawing.Point(6, 48);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(170, 27);
+            this.radioButton1.TabIndex = 43;
+            this.radioButton1.Text = "Lucro presumido";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F);
+            this.radioButton4.Location = new System.Drawing.Point(6, 13);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(170, 27);
+            this.radioButton4.TabIndex = 42;
+            this.radioButton4.Text = "Simples nacional";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(440, 398);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(167, 40);
             this.button4.TabIndex = 42;
             this.button4.Text = "Voltar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // CadastrarEmpresa

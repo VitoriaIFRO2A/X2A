@@ -476,22 +476,24 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(127, 549);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 30);
             this.button3.TabIndex = 7;
             this.button3.Text = "VOLTAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(623, 549);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(152, 29);
             this.button4.TabIndex = 8;
             this.button4.Text = "LISTA FUNCIONARIO";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // CadastrarFun
